@@ -282,7 +282,7 @@
 
 @media only screen and (max-width : 425px) {
   .App {
-    width: 425px;
+    max-width: 425px;
   }
 
   .header__nav__logo {
@@ -334,7 +334,7 @@
   }
 
   .about, .experience {
-    width: 425px;;
+    max-width: 425px;
   }
 
   .about h1, .experience h1, .footer h1 {
@@ -355,7 +355,7 @@
   .experience__projects {
     flex-direction: column;
     display: block;
-    width: 425px;;
+    max-width: 425px;
   }
 
   .experience__projects__block {
@@ -381,8 +381,8 @@
 
   .experience__projects__block span {
     font-size: var(--font-size-mobile-large);
-    top: 56px;
-    left: 100px;
+    top: 52px;
+    left: 64px;
   }
 
   .footer  p {
