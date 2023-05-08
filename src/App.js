@@ -24,8 +24,6 @@ function App() {
     window.scrollTo({top: 0, behavior: 'smooth'});
   };
 
-  console.log(showScroll);
-
   return (
     <div className="App">
       <Header />

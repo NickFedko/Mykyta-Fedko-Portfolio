@@ -2,6 +2,8 @@
   --font-size-header-logo: 24px;
   --font-size-large: 24px;
   --font-size-medium: 18px;
+  --font-size-mobile-large: 18px;
+  --font-size-mobile-medium: 12px;
   --font-size-introduction: 28px;
   --font-size-introduction-large: 100px;
   --font-size-introduction-button: 20px;
@@ -54,6 +56,39 @@
 
 .header__nav__icons img:hover {
   transform: scale(1.2);
+}
+
+.hamburger {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  right: 60px;
+  background-color: var(--font-color-light-yellow);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  transition: ease-in-out 0.5s;
+}
+
+.hamburger svg {
+  align-self: end;
+}
+
+.hamburger a {
+  padding: 4px;
+  text-decoration: none;
+  color: var(--font-color-dark-blue);
+}
+
+.hamburger__icons {
+  margin-top: 10px;
+}
+
+.hamburger img {
+  height: 48px;
 }
 
 .introduction {
@@ -191,7 +226,6 @@
 
 .experience__projects__block img {
   width: 560px;
-  height: 400px;
   object-fit: cover;
   border-radius: 20px;
   transition: all ease-in-out 0.3s;
@@ -245,3 +279,114 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@media only screen and (max-width : 420px) {
+  .App {
+    width: 400px;
+  }
+
+  .header__nav__logo {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 200px;
+    align-self: start;
+  }
+
+  .header__nav__links, .header__nav__icons {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .introduction {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .introduction__info {
+    width: 200px;
+  }
+
+  .introduction__info h3 {
+    font-size: 12px;
+  }
+
+  .introduction__info h1 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .introduction__photo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 0px;
+  }
+
+  .introduction__info__button__bg, .introduction__info button {
+    width: 80px;
+    height: 30px;
+    font-size: var(--font-size-mobile-medium);
+    margin-top: 10px;
+  }
+
+  .about, .experience {
+    width: 400px;
+  }
+
+  .about h1, .experience h1, .footer h1 {
+    font-size:  var(--font-size-mobile-large);
+    margin-right: 240px;
+    margin-top: 10px;
+  }
+
+  .about p, .experience p {
+    font-size: var(--font-size-mobile-medium);
+    width: 312px;
+  }
+
+  .about ul li {
+    font-size: var(--font-size-mobile-medium);
+  }
+  
+  .experience__projects {
+    flex-direction: column;
+  }
+
+  .experience__projects__block {
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience__projects__block img {
+    width: 308px;
+  }
+
+  .experience__projects__block h3 {
+    font-size: var(--font-size-mobile-large);
+  }
+
+  .experience__projects__block p {
+    font-size: var(--font-size-mobile-medium);
+  }
+
+  .experience__projects__block span {
+    font-size: var(--font-size-mobile-large);
+    top: 72px;
+    left: 108px;
+  }
+
+  .footer  p {
+    width: 308px;
+    font-size: var(--font-size-mobile-medium);
+    text-align: center;
+  }
+
+  body {
+    width: 400px;
+    margin: 0;
+  }
+}
