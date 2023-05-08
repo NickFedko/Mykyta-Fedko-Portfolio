@@ -65,7 +65,7 @@
   align-items: center;
   justify-content: center;
   top: 10px;
-  right: 60px;
+  right: 32px;
   background-color: var(--font-color-light-yellow);
   border-radius: 5px;
   padding: 20px;
@@ -251,10 +251,10 @@
 }
 
 @keyframes fadeIn {
-  0% {
+  100% {
     opacity: 0;
   }
-  100% {
+  0% {
     opacity: 0.5;
   }
 }
@@ -280,15 +280,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-@media only screen and (max-width : 420px) {
+@media only screen and (max-width : 425px) {
   .App {
-    width: 400px;
+    width: 425px;
   }
 
   .header__nav__logo {
     font-size: 14px;
     margin-top: 10px;
-    margin-right: 200px;
+    margin-right: 148px;
     align-self: start;
   }
 
@@ -306,16 +306,18 @@
   }
 
   .introduction__info {
-    width: 200px;
+    width: 172px;
   }
 
   .introduction__info h3 {
     font-size: 12px;
+    width: 120px;
   }
 
   .introduction__info h1 {
     font-size: 16px;
     line-height: 30px;
+    width: 160px;
   }
 
   .introduction__photo img {
@@ -332,18 +334,18 @@
   }
 
   .about, .experience {
-    width: 400px;
+    width: 425px;;
   }
 
   .about h1, .experience h1, .footer h1 {
     font-size:  var(--font-size-mobile-large);
-    margin-right: 240px;
+    margin-right: 184px;
     margin-top: 10px;
   }
 
   .about p, .experience p {
     font-size: var(--font-size-mobile-medium);
-    width: 312px;
+    width: 240px;
   }
 
   .about ul li {
@@ -352,17 +354,21 @@
   
   .experience__projects {
     flex-direction: column;
+    display: block;
+    width: 425px;;
   }
 
   .experience__projects__block {
-    width: 320px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
   .experience__projects__block img {
-    width: 308px;
+    width: 240px;
+    border-radius: 5px;
   }
 
   .experience__projects__block h3 {
@@ -375,18 +381,17 @@
 
   .experience__projects__block span {
     font-size: var(--font-size-mobile-large);
-    top: 72px;
-    left: 108px;
+    top: 56px;
+    left: 100px;
   }
 
   .footer  p {
-    width: 308px;
+    width: 240px;
     font-size: var(--font-size-mobile-medium);
     text-align: center;
   }
 
   body {
-    width: 400px;
-    margin: 0;
+    max-width: 425px;;
   }
 }
