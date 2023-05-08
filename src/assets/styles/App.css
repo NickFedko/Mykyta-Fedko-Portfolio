@@ -1,0 +1,247 @@
+:root {
+  --font-size-header-logo: 24px;
+  --font-size-large: 24px;
+  --font-size-medium: 18px;
+  --font-size-introduction: 28px;
+  --font-size-introduction-large: 100px;
+  --font-size-introduction-button: 20px;
+  --font-size-about-header: 100px;
+
+  --font-color-dark-blue: #03045E;
+  --font-color-dark-brown: #474306;
+  --font-color-light-yellow: #F7F197;
+
+  --inroduction-button-border: 1px solid #474306;
+  --inroduction-photo-border: 1px solid #474306;
+
+  --introduction-button-bg: #F5EE84;
+  --app-bg: #FBF8CC;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: var(--font-color-dark-blue);
+  background-color: var(--app-bg);
+}
+
+.App__header .header__nav {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__nav__logo {
+  font-size: var(--font-size-header-logo);
+  text-transform: uppercase;
+}
+
+.header__nav__links a {
+  color: var(--font-color-dark-blue);
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: var(--font-size-medium);
+}
+
+.header__nav__icons img {
+  width: 48px;
+  height: 48px;
+  margin-left: 10px; 
+  transition: all .3s ease-in-out;
+}
+
+.header__nav__icons img:hover {
+  transform: scale(1.2);
+}
+
+.introduction {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.introduction__info {
+  text-align: left;
+  font-size: var(--font-size-introduction);
+}
+
+.introduction__info h3 {
+  margin: 0px;
+}
+
+.introduction__info h1 {
+  width: 600px;
+  line-height: 100px;
+  margin: 0px;
+  font-size: var(--font-size-introduction-large);
+}
+
+.introduction__info button {
+  position: absolute;
+  border: var(--inroduction-button-border);
+  color: var(--font-color-dark-brown);
+  font-size: var(--font-size-introduction-button);
+  width: 160px;
+  height: 60px;
+  border-radius: 6px;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.introduction__info__button__bg {
+  position: relative;
+  background: var(--introduction-button-bg);
+  width: 160px;
+  height: 60px;
+  top: 8px;
+  left: 8px;
+  border-radius: 6px;
+  transition: all .3s ease-in-out;
+}
+
+.introduction__info a:hover ~ .introduction__info__button__bg{
+  transform: translate(-8px, -8px);
+}
+
+.introduction__photo {
+  border: var(--inroduction-photo-border);
+  padding: 2px;
+  border-radius: 80% 60% 80% 50%;
+}
+
+.introduction__photo img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 80% 60% 80% 50%;
+  margin-right: 20px;
+}
+
+.about, .experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.about h1, .experience h1, .footer h1 {
+  margin: 0;
+  margin-right: 800px;
+  font-size: var(--font-size-about-header);
+  color: var(--font-color-light-yellow);
+}
+
+.about p , .experience p, .footer p {
+  width: 800px;
+  margin: 0;
+  font-size: var(--font-size-medium)
+}
+
+.about ul li{
+  font-size: var(--font-size-medium);
+  font-weight: 600;
+}
+
+.experience__projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience__projects__block {
+  align-self: flex-start;
+  margin: 20px;
+  position: relative;
+}
+
+.experience__projects__block img:hover,
+.experience__projects__block span:hover ~ img {
+  filter: blur(4px);
+}
+
+.experience__projects__block img:hover ~ span,
+.experience__projects__block span:hover {
+  display: block;
+}
+
+.experience__projects__block span {
+  position: absolute;
+  display: none;
+  left: 200px;
+  top: 200px;
+  font-size: 28px;
+}
+
+.experience__projects__block a {
+  text-decoration: none;
+  color: var(--font-color-dark-blue)
+}
+
+.experience__projects__block p{
+  width: 560px;
+}
+
+.experience__projects__block:nth-child(2) img {
+  filter: blur(10px);
+}
+
+.experience__projects__block img {
+  width: 560px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.scrollTop {
+  position: fixed; 
+  width: 100%;
+  bottom: 100px;
+  left: 600px;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--font-color-dark-blue);
+  font-weight: 600;
+}
+
+.footer p {
+  width: 1200px;
+  text-align: left;
+  padding-bottom: 40px
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
