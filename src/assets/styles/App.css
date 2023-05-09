@@ -204,7 +204,7 @@
 
 .experience__projects__block img:hover,
 .experience__projects__block span:hover ~ img {
-  filter: blur(4px);
+  filter: blur(5px);
 }
 
 .experience__projects__block img:hover ~ span,
