@@ -4,6 +4,8 @@
   --font-size-medium: 18px;
   --font-size-mobile-large: 18px;
   --font-size-mobile-medium: 12px;
+  --font-size-tablet-large: 24px;
+  --font-size-tablet-medium: 16px;
   --font-size-introduction: 28px;
   --font-size-introduction-large: 100px;
   --font-size-introduction-button: 20px;
@@ -11,7 +13,7 @@
 
   --font-color-dark-blue: #03045E;
   --font-color-dark-brown: #474306;
-  --font-color-light-yellow: #F7F197;
+  --font-color-light-yellow: #a19b40;
 
   --inroduction-button-border: 1px solid #474306;
   --inroduction-photo-border: 1px solid #474306;
@@ -25,6 +27,11 @@
   font-family: 'Poppins', sans-serif;
   color: var(--font-color-dark-blue);
   background-color: var(--app-bg);
+}
+
+.App__header {
+  max-width: 1300px;
+  margin: auto;
 }
 
 .App__header .header__nav {
@@ -92,6 +99,8 @@
 }
 
 .introduction {
+  max-width: 1200px;
+  margin: auto;
   margin-top: 60px;
   display: flex;
   align-items: center;
@@ -206,8 +215,8 @@
 .experience__projects__block span {
   position: absolute;
   display: none;
-  left: 200px;
-  top: 200px;
+  left: 184px;
+  top: 136px;
   font-size: 28px;
 }
 
@@ -279,6 +288,60 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@media only screen and (max-width: 768px) {
+  body, .App, .about, .experience, .experience__projects {
+    max-width: 768px;
+  }
+
+  .header__nav a {
+    font-size: var(--font-size-tablet-medium);
+  }
+
+  .header__nav__icons img {
+    width: 40px;
+  }
+
+  .introduction__info h1 {
+    font-size: var(--font-size-tablet-large);
+    width: 200px;
+    line-height: 40px;
+  }
+
+  .introduction__info h3 {
+    font-size: var(--font-size-tablet-medium);
+  }
+
+  .introduction__info button, .introduction__info__button__bg {
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+  }
+
+  .introduction__photo img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .about h1, .experience h1, .footer h1 {
+    font-size: var(--font-size-tablet-large);
+    margin-right: 520px;
+  }
+
+  .about p, .experience p, .footer p {
+    font-size: var(--font-size-tablet-medium);
+    width: 560px;
+    text-align:justify;
+  }
+
+  .about ul li {
+    font-size: var(--font-size-tablet-medium);
+  }
+
+  .experience__projects {
+    flex-direction: column;
+  }
+}
 
 @media only screen and (max-width : 425px) {
   .App {
