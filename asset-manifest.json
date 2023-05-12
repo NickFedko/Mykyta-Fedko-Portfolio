@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Mykyta-Fedko-Portfolio/static/css/main.52d540ee.css",
-    "main.js": "/Mykyta-Fedko-Portfolio/static/js/main.22e8a21c.js",
+    "main.css": "/Mykyta-Fedko-Portfolio/static/css/main.b7c91d09.css",
+    "main.js": "/Mykyta-Fedko-Portfolio/static/js/main.3f9622df.js",
     "static/js/787.1ed0c42c.chunk.js": "/Mykyta-Fedko-Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/CV.pdf": "/Mykyta-Fedko-Portfolio/static/media/CV.01d83f02b13de8e7c3ef.pdf",
     "static/media/me.jpg": "/Mykyta-Fedko-Portfolio/static/media/me.7452da6129f2a268e767.jpg",
@@ -10,12 +10,12 @@
     "static/media/telegram.svg": "/Mykyta-Fedko-Portfolio/static/media/telegram.fb7e525579d004d0c911f54eab4b3a37.svg",
     "static/media/linkedin.svg": "/Mykyta-Fedko-Portfolio/static/media/linkedin.48f344d1650134feeb2058172316601c.svg",
     "index.html": "/Mykyta-Fedko-Portfolio/index.html",
-    "main.52d540ee.css.map": "/Mykyta-Fedko-Portfolio/static/css/main.52d540ee.css.map",
-    "main.22e8a21c.js.map": "/Mykyta-Fedko-Portfolio/static/js/main.22e8a21c.js.map",
+    "main.b7c91d09.css.map": "/Mykyta-Fedko-Portfolio/static/css/main.b7c91d09.css.map",
+    "main.3f9622df.js.map": "/Mykyta-Fedko-Portfolio/static/js/main.3f9622df.js.map",
     "787.1ed0c42c.chunk.js.map": "/Mykyta-Fedko-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52d540ee.css",
-    "static/js/main.22e8a21c.js"
+    "static/css/main.b7c91d09.css",
+    "static/js/main.3f9622df.js"
   ]
 }
